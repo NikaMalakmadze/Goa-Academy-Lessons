@@ -1,6 +1,6 @@
 from turtle import *
 
-speed(100) #speed control
+speed(10) #speed control
 
 #background
 penup()
