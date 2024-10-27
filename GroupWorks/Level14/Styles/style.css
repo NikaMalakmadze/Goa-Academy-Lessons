@@ -1,0 +1,565 @@
+/* Write CSS Style Here */
+
+/* Order */
+
+#order {
+  background-image: url("/assets/Background/sent-order.png");
+}
+
+/* Main Page*/
+#Log {
+  border: 5px solid rgb(163, 172, 62);
+  display: inline;
+  width: 49.8%;
+  height: 70px;
+  background-color: rgb(233, 250, 55);
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+  }
+}
+
+#Reg {
+  border: 5px solid rgb(35, 68, 229);
+  display: inline;
+  width: 49.8%;
+  height: 70px;
+  background-color: rgb(68, 124, 255);
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+  }
+}
+
+#Main {
+  font-family: cursive;
+  background: darkcyan;
+  font-size: xx-large;
+  text-align: center;
+  border: 20px solid rgb(23, 62, 135);
+}
+
+#Nav {
+  font-family: cursive;
+  background-color: goldenrod;
+  font-size: xx-large;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+
+  ul {
+    padding: 15px;
+    border: 5px solid black;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#Sky {
+  background-image: url("/assets/Background/sky.png");
+}
+
+#home {
+  font-family: cursive;
+  font-size: 29px;
+  text-align: center;
+  font-weight: bold;
+  background-color: cadetblue;
+  border: 5px solid black;
+}
+
+#about_us {
+  margin-top: 10px;
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(227, 128, 128);
+  border: 5px solid black;
+
+  img {
+    border: 15px solid black;
+    margin: 10px;
+  }
+}
+
+#Packages {
+  margin-top: 10px;
+  font-family: cursive;
+  font-size: 29px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(169, 247, 124);
+  border: 5px solid black;
+}
+
+#Pricing {
+  margin-top: 10px;
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(230, 240, 87);
+  border: 5px solid black;
+
+  h2 {
+    font-weight: bolder;
+  }
+
+  h3 {
+    color: rgb(0, 0, 0);
+  }
+
+  ol {
+    list-style-position: inside;
+    padding-left: 0px;
+  }
+
+  img {
+    border: 15px solid black;
+    border-style: inherit;
+  }
+
+  p {
+    display: block;
+  }
+
+  li {
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+  }
+}
+
+#FAQ {
+  margin-top: 10px;
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(129, 56, 127);
+  border: 5px solid black;
+
+  h2 {
+    font-weight: bolder;
+    color: rgba(178, 3, 3, 0.882);
+  }
+
+  h3 {
+    color: rgb(76, 179, 176);
+  }
+
+  p {
+    color: rgb(0, 0, 0);
+  }
+}
+
+#_7Wonders {
+  margin-top: 10px;
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(128, 182, 227);
+  border: 5px solid rgb(0, 0, 0);
+
+  h2 {
+    font-weight: bolder;
+  }
+
+  h3 {
+    color: azure;
+  }
+
+  ol {
+    list-style-position: inside;
+    padding-left: 0px;
+  }
+
+  img {
+    border: 15px solid black;
+    border-style: solid;
+  }
+
+  p {
+    display: block;
+  }
+
+  li {
+    color: brown;
+    font-size: 70px;
+  }
+}
+
+#info {
+  background-color: rgb(128, 182, 227);
+  text-decoration: underline;
+}
+
+#Contacts {
+  margin-top: 10px;
+  background-color: bisque;
+  border: 5px solid rgb(0, 0, 0);
+  text-align: center;
+  font-family: cursive;
+  font-size: xx-large;
+  input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  label {
+    display: block;
+    font-size: large;
+    font-weight: bolder;
+  }
+  button {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(255, 229, 36);
+    font-family: cursive;
+    font-size: large;
+    font-weight: bolder;
+    border: 5px solid rgb(176, 159, 35);
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  select {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+    font-family: cursive;
+  }
+}
+
+#register {
+  background-color: #29ef9d;
+  text-align: left;
+  width: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 3px solid black;
+  margin: auto;
+
+  label {
+    background-color: aliceblue;
+    border: 2px solid black;
+  }
+
+  legend {
+    background-color: aliceblue;
+    color: black;
+    border: 3px solid black;
+  }
+
+  input {
+    background-color: aliceblue;
+    border: 2px solid black;
+  }
+}
+
+#login {
+  background-color: chartreuse;
+  width: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: 3px solid black;
+  margin: 10;
+}
+
+video {
+  width: 400;
+  border: 10px solid black;
+  margin: 100;
+}
+
+/* Machu Pichu mount styles */
+
+#machu-mount {
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+
+  img {
+    border: 30px solid rgb(161, 192, 20);
+    border-style: double;
+  }
+
+  video {
+    border: 30px solid rgb(161, 192, 20);
+    border-style: double;
+  }
+}
+
+#machu-title {
+  color: rgb(87, 135, 15);
+  background-color: rgb(201, 195, 23);
+  font-family: cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  border: 10px solid rgb(98, 135, 41);
+}
+
+/* Petra styles */
+
+#petra-body {
+  background-color: rgb(131, 127, 124);
+}
+
+#petra {
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  position: center;
+  font-weight: bold;
+
+  img {
+    border: 30px solid rgb(245, 156, 23);
+    border-style: double;
+  }
+
+  video {
+    border: 30px solid rgb(245, 156, 23);
+    border-style: double;
+  }
+}
+
+#petra-title {
+  color: rgb(202, 153, 16);
+  background-color: rgb(153, 91, 79);
+  font-family: cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  border: 10px solid rgb(209, 73, 73);
+}
+
+/* Christ the Redeemer styles */
+
+#Christ_the_Redeemer {
+  color: rgb(192, 222, 240);
+  background-color: rgb(17, 155, 235);
+  font-family: cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  border: 10px solid rgb(14, 46, 65);
+}
+
+#Christ {
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  position: center;
+  font-weight: bold;
+
+  img {
+    border: 30px solid rgb(14, 46, 65);
+    border-style: double;
+  }
+
+  video {
+    border: 30px solid rgb(14, 46, 65);
+    border-style: double;
+  }
+}
+
+#Christ-Body {
+  background-color: rgb(128, 189, 201);
+}
+
+/* China Great Wall styles */
+
+#China {
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  position: center;
+  font-weight: bold;
+
+  img {
+    border: 30px solid rgb(17, 155, 235);
+    border-style: double;
+  }
+
+  video {
+    border: 30px solid rgb(17, 155, 235);
+    border-style: double;
+  }
+}
+
+#China_Heading {
+  color: rgb(24, 142, 221);
+  background-color: rgb(6, 7, 66);
+  font-family: cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  border: 10px solid rgb(73, 106, 240);
+}
+
+#China_Body {
+  background-color: rgb(192, 222, 240);
+}
+
+/* Colosseum styles */
+
+#Colosseum_Title {
+  color: rgb(241, 191, 162);
+  background-color: rgb(183, 47, 52);
+  font-family: cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  border: 10px solid rgb(86, 55, 37);
+}
+
+#Colosseum_div {
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  position: center;
+  font-weight: bold;
+
+  img {
+    border: 30px solid rgb(177, 81, 17);
+    border-style: double;
+  }
+
+  video {
+    border: 30px solid rgb(177, 81, 17);
+    border-style: double;
+  }
+}
+
+#Colosseum_Body {
+  background-color: rgb(85, 104, 145);
+}
+
+/* Taj mahal styles */
+
+#Taj_Title {
+  color: rgb(84, 10, 107);
+  background-color: rgb(212, 162, 235);
+  font-family: cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  border: 10px solid rgb(195, 151, 164);
+}
+
+#Taj_Body {
+  background-color: rgb(252, 221, 229);
+}
+
+#Taj_Div {
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  position: center;
+  font-weight: bold;
+
+  img {
+    border: 30px solid rgb(208, 59, 238);
+    border-style: double;
+  }
+
+  video {
+    border: 30px solid rgb(208, 59, 238);
+    border-style: double;
+  }
+}
+
+/* Chichen Itza styles */
+
+#Chichen_Title {
+  color: rgb(44, 64, 75);
+  background-color: rgb(93, 120, 163);
+  font-family: cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  border: 10px solid rgb(50, 64, 87);
+}
+
+#Chichen_Body {
+  background-color: rgb(180, 156, 143);
+}
+
+#Chichen_div {
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  position: center;
+  font-weight: bold;
+
+  img {
+    border: 30px solid rgb(207, 136, 71);
+    border-style: double;
+  }
+
+  video {
+    border: 30px solid rgb(207, 136, 71);
+    border-style: double;
+  }
+}
+
+/* button styles */
+
+#register body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(1, 5);
+}
+
+.btn {
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  background-color: rgb(rgb(0, 128, 85));
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+
+.btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(rgb(162, 231, 0));
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.btn2 {
+  padding: 15px 40px;
+  margin: 100;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
