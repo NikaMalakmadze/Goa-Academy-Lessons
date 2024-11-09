@@ -1,0 +1,166 @@
+
+#main
+{
+    background-image: url("/Level19/HomeWork/assets/background/sky.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content
+{
+    background-color: rgb(255, 183, 75);
+    font-family: cursive;
+    font-size: larger;
+    text-align: center;
+    border: 10px double black;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20vh;
+    ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li
+        {
+            margin-top: 10px;
+        }
+        a
+        {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bolder;
+        }
+    }
+}
+
+aside
+{
+    width: 30%;
+    padding-left: 15px;
+    margin: auto;
+    font-style: italic;
+    background-color: lightgray;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px dashed black;
+    margin-bottom: 20px;
+}
+
+#adjara , #Pianist , #Khinkali , #GOA , #IT
+{
+    font-family: cursive;
+    font-size: larger;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+    border: 5px double black;
+    button
+    {
+        width: 300px;
+        height: 50px;
+        margin: 20px;
+        font-size: larger;
+        font-family: cursive;
+        background-color: burlywood;
+        border: 5px solid rgb(234, 191, 137);
+        border-radius: 10px;
+        a
+        {
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+    p
+    {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    img
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 10px solid black;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    video
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 10px solid black;
+        border-radius: 20px;
+    }
+    header
+    {
+        margin-bottom: 40px;
+    }
+    hr
+    {
+        border: 3px dashed black;
+    }
+    nav
+    {
+        padding: 20px;
+        border: 5px dashed black;
+        border-radius: 10px;
+        width: fit-content;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        background-color: lightgray;
+    }
+    ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        a
+        {
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+}
+
+.Link
+{
+    text-decoration: underline;
+    color: blue;
+}
+
+.Bold 
+{
+    font-weight: bolder;
+}
+
+#Pianist
+{
+    background-color: lightsteelblue;
+    .list
+{
+    margin-bottom: 20px;
+}
+}
+
+#Khinkali
+{
+    background-color: beige;
+}
+
+#IT
+{
+    background-color: rgb(121, 245, 249);
+    .list
+    {
+        margin-bottom: 20px;
+    }
+}
