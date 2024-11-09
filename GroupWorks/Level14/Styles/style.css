@@ -3,7 +3,7 @@
 /* Order */
 
 #order {
-  background-image: url("/assets/Background/sent-order.png");
+  background-image: url("../assets/Background/sent-order.png");
 }
 
 /* Main Page*/
@@ -62,7 +62,7 @@
 }
 
 #Sky {
-  background-image: url("/assets/Background/sky.png");
+  background-image: url("../assets/Background/sky.png");
 }
 
 #home {
