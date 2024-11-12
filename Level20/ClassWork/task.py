@@ -8,6 +8,4 @@ for i in range(len(nums)):
         nums[i] = "odd"
 
 for num in nums:
-    print()
-    print(num, end="")
-    
+    print(num , "" , end="")
