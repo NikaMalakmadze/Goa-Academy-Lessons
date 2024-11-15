@@ -1,0 +1,183 @@
+#main
+{
+    background-image: url("/Level21/HomeWork/assets/background/sky.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content
+{
+    background-color: rgb(255, 183, 75);
+    font-family: cursive;
+    font-size: larger;
+    text-align: center;
+    border: 10px double black;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20vh;
+    ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li
+        {
+            margin-top: 10px;
+        }
+        a
+        {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bolder;
+        }
+    }
+}
+.page-style
+{
+    font-family: cursive;
+    font-size: larger;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 5px double black;
+    p
+    {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    img
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 10px solid black;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    header
+    {
+        margin-bottom: 40px;
+    }
+    hr
+    {
+        border: 3px dashed black;
+    }
+    nav
+    {
+        padding: 20px;
+        border: 5px dashed black;
+        border-radius: 10px;
+        width: fit-content;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        a
+        {
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+}
+.aside-text-box
+{
+    width: 30%;
+    padding-left: 15px;
+    margin: auto;
+    font-style: italic;
+    background-color: rgb(234, 207, 168);
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px dashed black;
+    margin-bottom: 20px;
+}
+button
+{
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    font-size: larger;
+    font-family: cursive;
+    background-color: burlywood;
+    border: 5px solid rgb(234, 191, 137);
+    border-radius: 10px;
+    a
+    {
+        text-decoration: none;
+        color: #000000;
+    } 
+} 
+.bold
+{
+    font-weight: bolder;
+}
+#new-year
+{
+    background-color: rgb(79, 150, 130);
+    nav
+    {
+        background-color: rgb(221, 217, 79);
+    }
+    .aside-text-box
+    {
+        background-color: rgb(221, 217, 79);
+    }
+}
+#lions
+{
+    background-color: rgb(250, 190, 51);
+    nav
+    {
+        background-color: rgb(255, 108, 34);
+    }
+    .aside-text-box
+    {
+        background-color: rgb(255, 108, 34);
+    }
+}
+#UFO
+{
+    background-color: rgb(66, 91, 183);
+    nav
+    {
+        background-color: rgb(215, 213, 96);
+    }
+    .aside-text-box
+    {
+        background-color: rgb(215, 213, 96);
+    }
+}
+#Life-of-Pi
+{
+    background-color: rgb(183, 198, 253);
+    nav
+    {
+        background-color: rgb(255, 183, 89);
+    }
+    .aside-text-box
+    {
+        background-color: rgb(255, 183, 89);
+    }
+}
+#JRR-Tolkien
+{
+    background-color: rgb(116, 82, 44);
+    nav
+    {
+        background-color: rgb(244, 165, 87);
+    }
+    .aside-text-box
+    {
+        background-color: rgb(244, 165, 87);
+    }
+}
