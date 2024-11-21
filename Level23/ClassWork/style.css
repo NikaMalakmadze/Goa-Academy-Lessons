@@ -1,0 +1,15 @@
+
+.div{
+    font-family: cursive;
+    background-color: brown;
+}
+
+#right{
+    text-align: right;
+    background-color: aqua;
+}
+
+#center{
+    text-align: center;
+    background-color: green;
+}
