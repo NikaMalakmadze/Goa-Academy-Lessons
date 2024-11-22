@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Level23/HomeWork/styles.css">
+    <title>Tables</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th colspan="2">HTML TABLE</th>
+        </tr>
+        <tr>
+            <td>cell 1</td>
+            <td>cell 2
+                <table>
+                    <tr>
+                        <th colspan="2">NESTED HTML TABLE</th>
+                    </tr>
+                    <tr>
+                        <td>Cell 2.1</td>
+                        <td>Cell 2.2</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 2.3</td>
+                        <td>Cell 2.4</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>Table 1</td>
+            <td>Table 1
+                <table id="nested-blue">
+                    <tr>
+                        <td>Table 2</td>
+                        <td>Table 2</td>
+                    </tr>
+                    <tr>
+                        <td>Table 2</td>
+                        <td>Table 2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 1</td>
+            <td>Table 1</td>
+        </tr>
+    </table>
+
+    <table id="left">
+        <tr>
+            <td colspan="4">This is head of the table</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="4">This is foot of the table</td>
+        </tr>
+    </table>
+
+    <table id="solid-blue">
+        <tr>
+            <th id="none">Table Header
+                <table class="nested" id="close-margin">
+                    <tr>
+                        <th>Sr No</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Result</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>John Einstein</td>
+                        <td>14</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Grace Olive</td>
+                        <td>15</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Andy Roberts</td>
+                        <td>15</td>
+                        <td>Fail</td>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th rowspan="2">Station</th>
+            <th colspan="2">Temperature</th>
+            <th rowspan="2">Humidity</th>
+            <th rowspan="2">Wheater</th>
+        </tr>
+        <tr>
+            <th>max</th>
+            <th>min</th>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>24</td>
+            <td>19</td>
+            <td>60%</td>
+            <td>Cloudy</td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>5</td>
+            <td>-1</td>
+            <td>70%</td>
+            <td>Rainy</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

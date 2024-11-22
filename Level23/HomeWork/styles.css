@@ -1,0 +1,51 @@
+table {
+    border: 5px black;
+    border-style: outset;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+tr,td,th {
+    border: 3px inset black;
+    padding: 20px;
+}
+.nested {
+    margin: 20px;
+}
+#left {
+    width: 400px;
+    text-align: left;
+
+    tr,td,th {
+        border: 3px inset black;
+        padding: 0;
+    }
+}
+.blue {
+    border-color: blue;
+}
+#nested-blue {
+    border: 3px solid blue;
+
+    tr,td,th {
+        border: 3px solid blue;
+    }
+}
+#solid-blue {
+    border: 5px solid blue;
+}
+#none {
+    border: none;
+    text-align: left;
+    font-size: larger;
+    padding-top: 10px;
+    padding: 5px;
+}
+#close-margin {
+    margin-left: 5px;
+    text-align: left;
+
+    tr,td,th {
+        padding: 0px;
+    }
+}
