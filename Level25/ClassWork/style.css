@@ -1,0 +1,11 @@
+
+.btn, .header, .box, footer{
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    border: 5px solid rgb(238, 174, 95);
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ceee5b;
+    padding: 20px;
+    margin: 10px;
+}
