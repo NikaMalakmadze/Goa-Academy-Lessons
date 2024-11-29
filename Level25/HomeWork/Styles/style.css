@@ -1,0 +1,127 @@
+
+#main
+{
+    background-image: url("/Level25/HomeWork/assets/background/sky.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content
+{
+    background-color: rgb(255, 183, 75);
+    font-family: cursive;
+    font-size: larger;
+    text-align: center;
+    border: 10px double black;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20vh;
+    ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li
+        {
+            margin-top: 10px;
+        }
+        a
+        {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bolder;
+        }
+    }
+}
+
+.btn, .header, .box, .images, .aside-box, footer {
+    border-radius: 10px;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    margin: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+#owl-style .btn, 
+#owl-style .header, 
+#owl-style .box, 
+#owl-style .images, 
+#owl-style .aside-box, 
+#owl-style footer {
+    background-color: blanchedalmond;
+    border: 5px solid rgb(238, 174, 95);
+    color: #ceee5b;
+}
+
+#linux-style .btn, 
+#linux-style .header, 
+#linux-style .box, 
+#linux-style .images, 
+#linux-style .aside-box, 
+#linux-style footer {
+    background-color: rgb(71, 202, 76);
+    border: 5px solid rgb(117, 224, 248);
+    color: #196a8c;
+}
+
+#adjara-style .btn, 
+#adjara-style .header, 
+#adjara-style .box, 
+#adjara-style .images, 
+#adjara-style .aside-box, 
+#adjara-style footer {
+    background-color: rgb(232, 133, 75);
+    border: 5px solid rgb(198, 135, 208);
+    color: #484130;
+}
+
+#masha-style .btn, 
+#masha-style .header, 
+#masha-style .box, 
+#masha-style .images, 
+#masha-style .aside-box, 
+#masha-style footer {
+    background-color: rgb(240, 222, 58);
+    border: 5px solid rgb(182, 42, 82);
+    color: #3b6cea;
+}
+
+#just-you-wait-style .btn, 
+#just-you-wait-style .header,
+#just-you-wait-style .box,
+#just-you-wait-style .images,
+#just-you-wait-style .aside-box,
+#just-you-wait-style footer {
+    background-color: rgb(238, 148, 237);
+    border: 5px solid rgb(65, 248, 135);
+    color: #e18557;
+}
+
+.images-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.images-section img {
+    border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 10px;
+}
