@@ -1,0 +1,22 @@
+
+.container {
+    background-color: antiquewhite;
+    border: 5px solid forestgreen;
+    padding: 20px;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sans {
+    font-family: sans-serif;
+}
