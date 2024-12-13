@@ -1,0 +1,122 @@
+
+@font-face {
+    font-family: "Boxo-Boxo";
+    src: url("/Level29/HomeWork/Fonts/Boxo-Boxo/bpg_boxo-boxo.ttf");
+}
+
+@font-face {
+    font-family: "Glaho-Arial";
+    src: url("/Level29/HomeWork/Fonts/Glaho-Arial/bpg_glaho_arial.ttf");
+}
+
+html, body {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(21, 18, 18);
+    margin: 0px;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/Level29/HomeWork/assets/backgrounds/Georgia.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    text-align: center;
+    font-style: oblique;
+    font-family: "Glaho-Arial";
+}
+
+.list-container {
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 4px;
+    padding-left: 0px;
+    width: 1000px;
+    height: fit-content;
+    justify-content: center;
+    font-family: "Glaho-Arial";
+}
+
+.list-item {
+    border: 3px solid hsl(0,0%,50%);
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f3ebeb;
+}
+
+.list-item:hover {
+    background-color: rgb(218, 106, 106);
+    color: #f0f8ff;
+}
+
+.active {
+    background-color: rgb(229, 17, 17);
+    border: 4px solid rgb(62, 61, 61);
+    color: #f0f8ff;
+    font-weight: 600;
+}
+
+.box {
+    box-shadow: 20px 20px 20px hsla(0, 2%, 12%, 0.874);
+    background-color: #f3ebeb;
+    padding: 20px;
+    font-weight: 700;
+    height: 420px;
+    width: 1000px;
+    margin: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-family: "Boxo-Boxo";
+}
+
+.aside-box {
+    background-color: #f34545;
+    padding: 10px;
+    box-shadow: 10px 5px 5px rgba(109, 108, 108, 0.612);
+    color: #ffffff;
+    h3 {
+        margin-left: 20px;
+    }
+}
+
+.images-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+    border: 5px solid rgb(98, 98, 98);
+}
+
+.hidden {
+    display: none;
+}
