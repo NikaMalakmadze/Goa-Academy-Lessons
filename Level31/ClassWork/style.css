@@ -1,0 +1,22 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+.box {
+    background-color: beige;
+    margin: 10px 20px 30px 40px;
+    padding: 10px 20px 30px 40px;
+    border: 5px solid chocolate;
+}
+
+.center {
+    margin: 0 auto;
+    width: 500px;
+}
