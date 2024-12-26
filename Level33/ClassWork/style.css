@@ -1,0 +1,15 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 80px;
+    margin: auto;
+    background-color: bisque;
+    border: 3px solid black;
+    border-radius: 50% 50% 0 0;
+}
