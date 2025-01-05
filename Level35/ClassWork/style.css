@@ -1,0 +1,173 @@
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('./assets/Fonts/Jersey15-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Pixel-Bold';
+    src: url('./assets/Fonts/Jersey10-Regular.ttf');
+}
+
+.box::-webkit-scrollbar {
+    width: 10px;
+    opacity: 0;
+    scroll-behavior: smooth;
+}
+
+.box:hover::-webkit-scrollbar-track {
+    background-image: linear-gradient(to top, #243949 0%, #517fa4 100%);
+    border-radius: 30px;
+}
+
+.box:hover::-webkit-scrollbar-thumb {
+    background-color: #e0cee8;
+    border-radius: 30px;
+}
+
+.box:hover::-webkit-scrollbar-thumb:hover {
+    background-color: #f34545;
+}
+
+.box:hover::-webkit-scrollbar {
+    opacity: 1;
+}
+
+.box p::first-letter {
+    display: inline-block;
+    font-family: 'Pixel-Bold', sans-serif;
+    font-size: 45px;
+    color: #f1d6d6;
+    padding: 2px 6px;
+    line-height: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/backgrounds/Main-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Pixel-Bold', sans-serif;
+    color: #f1d6d6;
+}
+
+.box {
+    /* size */
+    height: 420px;
+    width: 1000px;
+    /* center box */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* box styles and properties */
+    box-shadow: rgba(32, 9, 118, 0.56) 0px 22px 70px 4px;
+    background-color: #312642;
+    padding: 20px;
+    opacity: 0.9;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* font properties */
+    font-family: 'Pixel', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #ac9fbf;
+    word-spacing: 10px;
+    text-align: justify;
+}
+
+.box:hover {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.aside-box {
+    background-color: #f34545;
+    padding: 10px;
+    box-shadow: rgba(159, 163, 169, 0.775) 0px 2px 2px, rgba(137, 142, 150, 0.753) 0px 0px 3px 3px;
+    word-spacing: 5px;
+    color: #e3dfdf;
+    h3 {
+        margin-left: 20px;
+        font-family: 'Pixel-Bold';
+        color: #ffffff;
+        opacity: 0.7;
+    }
+    ul {
+        list-style: square;
+    }
+    li {
+        opacity: 0.7;
+    }
+}
+
+.darker {
+    font-family: 'Pixel-Bold';
+    color: #ffffff;
+    opacity: 1;
+}
+
+.aside-box:hover {
+    box-shadow: #f34545 0px 5px 5px, #f07373 0px 0px 5px 5px;
+    li, h3 {
+        color: #f7f6f7;
+        opacity: 1;
+        transition: color 1s ease, opacity 1s ease;
+    }
+
+    .darker {
+        color: #ffffff;
+        transition: color 1s ease;
+    }
+
+    transition: box-shadow 1s ease;
+}
+
+.images-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 35px;
+}
+
+.image {
+    width: 900px;
+    height: 400px;
+    box-shadow: #a99fa2c6 0px 5px 5px, #898e96c0 0px 0px 5px 5px;
+}
+
+.image:hover {
+    box-shadow: #f34545 0px 5px 5px, #f07373 0px 0px 5px 5px;
+    transition: all 0.7s ease;
+}
+
+#image1:hover {
+    content: url('./assets/Gifs/computer-gif-1.gif');
+}
+
+#image2:hover {
+    content: url('./assets/Gifs/computer-gif-2.gif');
+}
+
+#image3:hover {
+    content: url('./assets/Gifs/computer-gif-3.gif');
+}
