@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.space {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+
+    padding: 20px 0px;
+    background-image: url('./assets/images/Space-Background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1120px;
+    height: 100%;
+
+    margin: 0px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space__card {
+    box-sizing: border-box;
+
+    width: 720px;
+    height: 600px;
+
+    border-radius: 30px;
+    background: linear-gradient(135deg, 
+      rgba(0, 0, 0, 1) 0%, 
+      rgba(45, 4, 70, 1) 30%, 
+      rgba(6, 27, 63, 1) 50%, 
+      rgba(9, 7, 57, 1) 70%, 
+      rgba(0, 0, 0, 1) 100%);
+
+    /* background: linear-gradient(120deg, 
+      rgb(73, 38, 107) 25%,   
+      rgb(41, 27, 99) 50%,    
+      rgb(20, 41, 83) 100%);    */
+
+    overflow: hidden;
+}
+
+.space__card-bg {
+    width: 720px;
+    height: 420px;
+}
+
+.space__card-bg img{
+    width: 720px;
+    height: 420px;
+}
+
+.space__card-text {
+    box-sizing: border-box;
+    height: 180px;
+
+    padding: 30px;
+
+    font-family: "Pixelify Sans", serif;;
+    color: aliceblue;
+}
+
+.space__card-title {
+    margin-bottom: 15px;
+
+    font-size: 40px;
+}
+
+.space__card-desc {
+    font-size: 14px;
+}
+
+.transparent {
+    text-shadow: 0 0 10px #ededed, 0 0 20px #a83aed, 0 0 30px #0800ff;
+}
