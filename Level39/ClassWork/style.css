@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    margin: 20px;
+  }
+
+  ul {
+    list-style-image: url('assets/images/next.png');
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
+  li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
