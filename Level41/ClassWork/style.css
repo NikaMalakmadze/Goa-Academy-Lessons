@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    display: block;
+    width: 300px;
+    
+    margin-block: 20px;
+    padding: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    
+    border-radius: 20px;
+    border: 5px solid rgb(212, 212, 207);
+    background-color: rgb(212, 212, 207);
+
+    margin-inline: auto;
+    text-align: center;
+}
+
+.header {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+
+    padding: 20px;
+
+    background-color: rgb(119, 119, 90);
+}
+
+.container {
+    box-sizing: border-box;
+
+    max-width: 1140px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    box-sizing: border-box;
+
+    padding: 30px;
+
+    border: 5px solid rgb(251, 213, 157);
+    border-radius: 20px;
+    background-color: blanchedalmond;
+}
+
+.content__title {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.content__desc {
+    font-size: 30px;
+    text-align: center;
+}
+
+#link:link {
+    background-color: rgb(32, 225, 45);
+}
+
+#visited:visited {
+    color: black;
+    background-color: rgb(233, 214, 185);
+}
+
+#active {
+    transition: background-color 1s ease, color 1s ease;
+}
+
+#active:active {
+    background-color: burlywood;
+    color: aliceblue;
+}
+
+#hover {
+    transition: background-color 1s ease;
+}
+
+#hover:hover {
+    background-color: blanchedalmond;
+}
+
+.table {
+    box-sizing: border-box;
+    padding: 50px 0px;
+
+    background-color: rgb(90, 90, 80);
+}
+
+.table__content {
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    background-color: bisque;
+    border: 5px solid rgb(198, 173, 143);
+    border-radius: 20px;
+}
+
+.table__content-title {
+    margin-bottom: 20px;
+
+    font-size: 38px;
+    text-align: center;
+}
+
+.table table {
+    width: 800px;
+    height: 400px;
+}
+
+td, th {
+    border: 5px dashed red;
+    font-size: 20px;
+    text-align: center;
+}
+
+.table__header {
+    padding: 0px;
+
+    text-align: center;
+    color: whitesmoke;
+
+    border: 5px dashed red;
+}
+
+.table table tr:first-child {
+    background-color: rgb(139, 0, 139);
+}
+
+.table table tr:nth-child(2n + 2) {
+    background-color: rgb(255, 248, 220);
+}
+
+.table table tr:nth-child(3) {
+    background-color: rgb(255, 255, 255);
+}
+
+.table-big {
+    box-sizing: border-box;
+
+    padding: 50px 0px;
+
+    background-color: rgb(66, 66, 60);
+}
+
+.table-big__content {
+    box-sizing: border-box;
+    width: 90%;
+
+    padding: 20px;
+
+    background-color: bisque;
+    border: 5px solid rgb(198, 173, 143);
+    border-radius: 20px;
+}
+
+.table-big__content-title {
+    margin-bottom: 20px;
+
+    font-size: 38px;
+    text-align: center;
+}
+
+.table-big__table {
+    width: 100%;
+    height: 400px;
+
+    background-color: rgb(245, 245, 245);
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.table-big__table tr:first-child {
+    background-color: rgb(1, 152, 122);
+}
+
+.table-big__table tr {
+    background-color: rgb(243, 243, 243);
+    transition: background-color 1s ease;
+}
+
+.table-big__table td, th {
+    box-sizing: border-box;
+    
+    padding: 10px;
+
+    text-align: left;
+    border: none;
+    border-top: 2px solid rgb(221, 221, 221);
+}
+
+.table-big__table th {
+    border-top: none
+}
+
+.table-big__table tr:not(:first-child):hover {
+    background-color: rgb(221, 221, 221);
+}
