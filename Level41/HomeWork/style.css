@@ -1,0 +1,329 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.table-section {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+
+    padding: 20px 0px;
+}
+
+.container {
+    max-width: 1140px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    height: 80%;
+}
+
+/* Fixed Header Table */
+
+.table-section.fixed-table-section {
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+.table-section.fixed-table-section .card {
+    overflow-y: scroll;
+}
+
+.fixed-table {
+    box-sizing: border-box;
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(42, 202, 149);
+    border-spacing: 0px;
+
+    color: azure;
+}
+
+.fixed-table th {
+    box-sizing: border-box;
+    position: sticky;
+
+    top: 0px;
+
+    font-size: 50px;
+
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    background-color: rgb(42, 202, 149);
+}
+
+.fixed-table .info {
+    position: sticky;
+
+    top: 120.8px;
+}
+
+.fixed-table td {
+    box-sizing: border-box;
+
+    padding: 20px 60px;
+
+    border-top: 1px solid #b8cbb87a;
+}
+
+.fixed-table .info td {
+    border-top: none;
+    background-color: rgba(136, 230, 198, 0.792);
+}
+
+/* blue-table */
+
+.table-section.blue-table-section {
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+}
+
+.table-section.blue-table-section .blue-table {
+    width: 100%;
+    height: 100%;
+
+    border-spacing: 0px;
+    color: azure;
+}
+
+.blue-table th {
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    background-color: #4d5596;
+    font-size: 24px;
+    text-align: left;
+}
+
+.blue-table td {
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    font-size: 22px;
+    background-color: #8091b78f;
+}
+
+.blue-table tr {
+    transition: background-color 0.3s ease;
+}
+
+.blue-table tr:hover {
+    background-color: #ffffff88;
+}
+
+/* Brown Table */
+
+.table-section.brown-table-section {
+    background-color: rgb(244, 236, 225);
+}
+
+.brown-table {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    border: 10px solid #de582b;
+    border-spacing: 0px;
+
+    background-color: rgb(247, 224, 196);
+    box-shadow: rgba(37, 37, 37, 0.895) 0px 7px 29px 0px;
+}
+
+.brown-table th {
+    box-sizing: border-box;
+
+    padding: 10px 30px;
+
+    border: 1px solid azure;
+    background-color: rgb(148, 73, 46);
+
+    font-size: 24px;
+    color: azure;
+}
+
+.brown-table tr:nth-child(2n + 1) {
+    background-color: rgb(224, 120, 72);
+}
+
+.brown-table td {
+    box-sizing: border-box;
+
+    padding: 10px 30px;
+
+    border: 1px solid #84290a;
+    font-size: 20px;
+}
+
+/* Pricing Cards */
+
+.table-section.pricing-cards {
+    box-sizing: border-box;
+
+    padding: 40px 0px;
+
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.table-section.pricing-cards .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricing-card {
+    box-sizing: border-box;
+
+    width: 300px;
+    height: 500px;
+
+    padding: 40px 20px;
+
+    border-radius: 20px;
+
+    background-color: #6991c7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+
+    font-family: 'Poppins';
+    color: azure;
+}
+
+.pricing-card img {
+    width: 100px;
+}
+
+.pricing-card__price-wrapper {
+    text-align: center;
+}
+
+.pricing-card__price-plan {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.pricing-card__price {
+    font-size: 50px;
+}
+
+.dolar {
+    position: relative;
+    top: -15px;
+}
+
+.pricing-card__info ul {
+    margin-bottom: 10px;
+    list-style-image: url('./assets/icons/check.png');
+    list-style-position: inside;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    box-sizing: border-box;
+
+    width: 200px;
+    height: 30px;
+
+    border-radius: 20px;
+    background-color: aliceblue;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: rgba(37, 37, 37, 0.511) 0px 7px 29px 0px;
+}
+
+.blue-card {
+    background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+}
+
+.blue-card .pricing-card__info ul li:last-child {
+    list-style-image: url('./assets/icons/close.png');
+}
+
+.pink-card {
+    background-image: linear-gradient(to top, #f9d423 0%,#e14fad 100%);
+}
+
+.pink-card .pricing-card__info ul li:last-child {
+    list-style-image: url('./assets/icons/close.png');
+}
+
+.green-card {
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+
+/* Purple Table */
+
+.table-section.purple-table-section {
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+.purple-table {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px 20px 0px 0px;
+    border-spacing: 0px;
+    background-color: #f5f6f5;
+
+    box-shadow: rgba(37, 37, 37, 0.432) 0px 7px 29px 0px;
+
+    overflow: hidden;
+}
+
+.purple-table tr:nth-child(2n){
+    background-color: #e6e6e6;
+}
+
+.purple-table th {
+    box-sizing: border-box;
+
+    padding: 10px 30px;
+
+    background-color: #b465da;
+
+    text-align: left;
+    color: azure;
+}
+
+.purple-table td {
+    box-sizing: border-box;
+
+    padding: 10px 30px;
+}
