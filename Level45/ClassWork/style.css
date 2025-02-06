@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pixelify Sans';
+    overflow-x: hidden;
+}
+
+.task {
+    box-sizing: border-box;
+
+    height: 100vh;
+}
+
+.task-1 {
+    background-color: antiquewhite;
+}
+
+.task-1 .container {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+
+    font-size: 30px;
+
+    color: aliceblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card--blue {
+    background-color: darkcyan;
+}
+
+.card--red {
+    background-color: brown;
+}
+
+.card--green {
+    background-color: darkgreen;
+}
+
+.card--yellow {
+    background-color: darkorange;
+}
+
+.card--orange {
+    background-color: orangered;
+}
+
+.task-2 {
+    background-color: rgb(252, 138, 96);
+}
+
+.task-2 .container {
+    max-width: 100vw;
+
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-3 {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task-3 .container {
+    max-width: 100vw;
+
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-4 {
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task-4 .container {
+    max-width: 100vw;
+
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-5 {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task-5 .container {
+    max-width: 100vw;
+
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__wrapper--center {
+    display: flex;
+    justify-content: center;
+}
