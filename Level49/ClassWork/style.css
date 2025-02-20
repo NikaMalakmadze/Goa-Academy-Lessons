@@ -1,0 +1,26 @@
+.box {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rect {
+  width: 80px;
+  height: 220px;
+  background-color: #FDFFE9;
+  margin-right: 20px
+}
+.box {
+  display: flex;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #FDFFE9;
+  border-radius: 50%;
+}
+.circles {
+  display: flex;
+  flex-direction: column;
+  gap: 35px
+}
