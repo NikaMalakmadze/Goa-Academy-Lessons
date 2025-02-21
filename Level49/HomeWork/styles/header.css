@@ -1,0 +1,41 @@
+
+.logo-container {
+    box-sizing: border-box;
+    position: relative;
+
+    width: 100vw;
+    height: 80px;
+
+    padding: 20px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    z-index: 30;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.logo__title {
+    font-family: 'incosolata-Bold';
+    font-size: 20px;
+    color: #ffffff;
+
+    transition: color 1s ease, transform 1s ease;
+}
+
+.logo__title:hover {
+    color: #f57463;
+    transform: translateY(-2px);
+}

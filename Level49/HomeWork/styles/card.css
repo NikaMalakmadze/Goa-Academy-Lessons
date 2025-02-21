@@ -1,0 +1,265 @@
+
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./fonts.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('./../assets/images/Bg-3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.card {
+    box-sizing: border-box;
+
+    width: 100vw;
+    height: 100vh;
+
+    margin-top: -80px;
+    padding-top: 80px;
+
+    color: #ffffff;
+}
+
+.container {
+    box-sizing: border-box;
+    
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+.card__info {
+    max-width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__title {
+    margin-bottom: 20px;
+
+    font-family: 'incosolata-Bold';
+    font-size: 50px;
+
+    text-align: center;
+}
+
+.card__desc {
+    max-width: 50%;
+
+    font-family: 'incosolata-Reg';
+    font-size: 16px;
+
+    text-align: center;
+}
+
+.card-container {
+    box-sizing: border-box;
+
+    width: 500px;
+    height: 250px;
+
+    padding: 25px 15px;
+
+    background-image: url('./../assets/images/pattern-ticket.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__stats-cofin {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.card__stats-cofin-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.card__stats-cofin-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.card__stats-cofin-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card__stats-cofin-title {
+    font-family: 'incosolata-Bold';
+    font-size: 30px;
+}
+
+.card__stats-cofin-desc {
+    font-family: 'incosolata-Reg';
+    font-size: 16px;
+}
+
+.card__stats-profile {
+    display: flex;
+    gap: 10px;
+}
+
+.card__stats-profile-icon {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__stats-profile-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.card__stats-profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card__stats-profile-title {
+    font-family: 'incosolata-Bold';
+    font-size: 20px;
+}
+
+.card__stats-profile-mail-container {
+    display: flex;
+    gap: 5px;
+}
+
+.card__id-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__id {
+    font-family: 'incosolata-Bold';
+    font-size: 20px;
+    color: #c4bbbb;
+
+    transform: rotateZ(90deg);
+}
+
+.colorful {
+    display: inline;
+    background: linear-gradient(45deg, #f37362, #ffffff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .card__info {
+        max-width: unset;
+        width: 90%;
+    }
+}
+
+@media (max-width: 550px) {
+    .card__title {
+        font-size: 40px;
+    }
+
+    .card__desc {
+        max-width: unset;
+        width: 80%;
+    }
+
+    .card-container {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    .card__title {
+        font-size: 35px;
+    }
+
+    .card__desc {
+        max-width: unset;
+        width: 80%;
+    }
+
+    .card-container {
+        width: 350px;
+        height: 175px;
+    }
+    
+    .card__stats-cofin-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .card__stats-cofin-icon svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .card__stats-cofin-title {
+        font-size: 20px;
+    }
+
+    .card__stats-cofin-desc {
+        font-size: 12px;
+    }
+
+    .card__stats-profile-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .card__title {
+        font-size: 25px;
+    }
+
+    .card__desc {
+        max-width: unset;
+        width: 80%;
+    }
+
+    .card-container {
+        width: 300px;
+        height: 150px;
+    }
+}
