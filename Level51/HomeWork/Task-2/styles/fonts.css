@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: 'Overpass-Regular';
+    src: url('./../Assets/fonts/Overpass-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Overpass-Bold';
+    src: url('./../Assets/fonts/Overpass-Bold.ttf');
+}
+
+:root {
+    --OverpassR: 'Overpass-Regular';
+    --OverpassB: 'Overpass-Bold'
+}

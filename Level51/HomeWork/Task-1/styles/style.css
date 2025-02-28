@@ -1,0 +1,186 @@
+
+@import url('./reset.css');
+@import url('./fonts.css');
+
+.perfum {    
+    width: 100vw;
+    height: 100vh;
+
+    padding: 50px 0px;
+
+    background-color: #f3eae3;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100%;
+    
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfum__card {
+    width: 600px;
+    height: 400px;
+
+    background-color: #fff;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    overflow: hidden;
+}
+
+.perfum__card-img-container {
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.perfum__card-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: all 1.5s ease;
+}
+
+.perfum__card-img:hover {
+    width: 110%;
+    height: 120%;
+}
+
+.perfum__card-info {
+    width: 50%;
+    height: 100%;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.perfum__card-subtitle {
+    font-family: var(--MontserratB);
+    font-size: 14px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+
+    color: #6c7289;
+}
+
+.perfum__card-title {
+    font-family: var(--frauncesB);
+    font-size: 30px;
+
+    color: #1c232b;
+
+    text-wrap: balance;
+}
+
+.perfum__card-desc {
+    font-family: var(--MontserratM);
+    font-size: 16px;
+
+    color: #6c7289;
+
+    text-wrap: balance;
+}
+
+.perfum__card-price-container {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.perfum__card-price {
+    font-family: var(--frauncesB);
+    font-size: 34px;
+
+    color: #3c8067;
+}
+
+.perfum__card-price--old {
+    font-size: 12px;
+    
+    color: #6c7289;
+
+    text-decoration: line-through;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+
+    background-color: #3c8067;
+    border-radius: 8px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    transition: background-color 0.6s ease;
+}
+
+.btn:hover {
+    background-color: #1b4133;
+}
+
+.btn__icon {
+    width: 15px;
+    height: 15px;
+
+    object-fit: cover;
+}
+
+.btn__text {
+    font-family: var(--MontserratM);
+    font-size: 14px;
+    
+    color: #f3eae3;
+}
+
+@media (max-width: 650px) {
+    .perfum__card {
+        width: 350px;
+        height: 600px;
+
+        flex-direction: column;
+    }
+
+    .perfum__card-info {
+        width: 100%;
+        height: 60%;
+    }
+
+    .perfum__card-img-container {
+        width: 100%;
+        height: 40%;
+    }    
+}
+
+@media (max-width: 400px) {
+    .perfum__card {
+        width: 100%;
+        height: 700px;
+    }
+}
+
+@media (max-width: 350px) {
+    .perfum__card {
+        width: 100%;
+        height: 750px;
+    }
+}

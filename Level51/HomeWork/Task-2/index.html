@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/rate.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <section class="rate">
+    <div class="container">
+      <div class="rate__card">
+        <div class="rate__star-img-container">
+          <img src="./assets/images/icon-star.svg" alt="" class="rate__star-img">
+        </div>
+        <div class="rate__text">
+          <h3 class="rate__title">How did we do?</h3>
+          <p class="rate__desc">Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!</p>
+        </div>
+        <form class="rate__form">
+          <input type="radio" name="rate" value="1" id="input__1-star" class="rate__form-radio">
+          <input type="radio" name="rate" value="2" id="input__2-star" class="rate__form-radio">
+          <input type="radio" name="rate" value="3" id="input__3-star" class="rate__form-radio">
+          <input type="radio" name="rate" value="4" id="input__4-star" class="rate__form-radio">
+          <input type="radio" name="rate" value="5" id="input__5-star" class="rate__form-radio">
+        </form>
+        <a href="#!" class="btn">
+          <div class="btn__text">Submit</div>
+        </a>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+
+@import url('./reset.css');
+@import url('./fonts.css');
+
+.rate {    
+    width: 100vw;
+    height: 100vh;
+
+    padding: 50px 0px;
+
+    background-color: #121417;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100%;
+    
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rate__card {
+    width: 400px;
+    height: 400px;
+
+    padding: 30px;
+
+    background-color: #1d232a;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.rate__star-img-container {
+    width: 40px;
+    height: 40px;
+
+    background-color: #323a43;
+
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.rate__star-img {
+    width: 40%;
+    height: 40%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.rate__star-img-container:hover .rate__star-img {
+    transform: rotateZ(-30deg) scale(1.2);
+}
+
+.rate__text {
+    width: 100%;
+}
+
+.rate__title {
+    margin-bottom: 15px;
+
+    font-family: var(--OverpassR);
+    font-size: 28px;
+
+    color: #ffffff;
+}
+
+.rate__desc {
+    font-family: var(--OverpassR);
+    font-size: 15px;
+
+    color: #959eac;
+}
+
+.rate__form {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate__form-radio {
+    position: relative;
+
+    width: 50px;
+    height: 50px;
+
+    margin: 0;
+
+    background-color: #323a43;
+
+    border-radius: 100%;
+
+    outline: none;
+
+    appearance: none;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.rate__form-radio::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+
+    border-radius: 100%;
+
+    background-color: #323a43;
+}
+
+.rate__form-radio:hover {
+    background-color: #ffffff;
+}
+
+.rate__form-radio:hover::after {
+    color: #121417;
+}
+
+.rate__form-radio:checked::before {
+    width: 100%;
+    height: 100%;
+
+    background-color: #fb7413;
+}
+
+.rate__form-radio::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 100%;
+
+    font-family: var(--OverpassB);
+    font-size: 18px;
+    
+    color: #959eac;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+}
+
+.rate__form-radio:checked::after {
+    color: #121417;
+}
+
+#input__1-star::after {
+    content: '1';
+}
+
+#input__2-star::after {
+    content: '2';
+}
+
+#input__3-star::after {
+    content: '3';
+}
+
+#input__4-star::after {
+    content: '4';
+}
+
+#input__5-star::after {
+    content: '5';
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+
+    background-color: #fb7413;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.2s ease;
+}
+
+.btn__text {
+    font-family: var(--OverpassB);
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 14px;
+
+    color: #121417;
+
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+}
+
+@media (max-width: 400px) {
+    .rate__card {
+        height: fit-content;
+        gap: 20px;
+    }
+
+    .rate__form-radio {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .rate__form-radio {
+        width: 30px;
+        height: 30px;
+    }
+}

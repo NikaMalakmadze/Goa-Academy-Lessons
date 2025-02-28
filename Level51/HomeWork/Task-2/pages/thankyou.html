@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./../styles/thankyou.css">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+    <section class="thankyou">
+        <div class="container">
+            <div class="thankyou__card">
+                <div class="thankyou__card-design">
+                    <div class="thankyou__card-img-container">
+                        <img src="./../assets/images/illustration-thank-you.svg" alt="" class="thankyou__card-img">
+                    </div>
+                    <div class="thankyou__card-result">
+                        You selected<span id="thankyou__rating"></span>out of 5
+                    </div>
+                </div>
+                <div class="thankyou__card-text">
+                    <h4 class="thankyou__card-title">Thank you!</h4>
+                    <p class="thankyou__card-desc">We appreciate you taking the time to give a rating. If you ever need
+                        more support,
+                        don’t hesitate to get in touch!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // get value from current location's hash substring
+        const rating = location.hash.substring(1);
+
+        // find and get where rating should go
+        const ratingElement = document.querySelector('#thankyou__rating');
+
+        // display rating
+        ratingElement.innerHTML = rating;
+    </script>
+</body>
+
+</html>

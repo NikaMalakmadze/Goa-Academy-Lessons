@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: 'Fraunces-Bold';
+    src: url('./../Assets/fonts/Fraunces_9pt-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('./../Assets/fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./../Assets/fonts/Montserrat-Bold.ttf');
+}
+
+:root {
+    --frauncesB: 'Fraunces-Bold';
+    --MontserratM: 'Montserrat-Medium';
+    --MontserratB: 'Montserrat-Bold'
+}
