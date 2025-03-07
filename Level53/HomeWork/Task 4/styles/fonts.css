@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('./../Assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('./../Assets/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('./../Assets/fonts/OpenSans-Regular.ttf');
+}
+
+:root {
+    --PoppinsR: 'Poppins-Regular';
+    --PoppinsB: 'Poppins-Bold';
+    --OpenSansR: 'OpenSans-Regular';
+}

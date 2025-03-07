@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: 'Outfit-Regular';
+    src: url('./../Assets/fonts/Outfit-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit-Bold';
+    src: url('./../Assets/fonts/Outfit-Bold.ttf');
+}
+
+:root {
+    --OutfitR: 'Outfit-Regular';
+    --OutfitB: 'Outfit-Bold';
+}

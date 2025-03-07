@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: 'KumbhSans-Regular';
+    src: url('./../Assets/fonts/KumbhSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'KumbhSans-Bold';
+    src: url('./../Assets/fonts/KumbhSans-Bold.ttf');
+}
+
+:root {
+    --KumbhSansR: 'KumbhSans-Regular';
+    --KumbhSansB: 'KumbhSans-Bold';
+}

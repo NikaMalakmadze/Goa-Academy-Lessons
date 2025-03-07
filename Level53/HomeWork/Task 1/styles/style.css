@@ -1,0 +1,146 @@
+
+@import url('./reset.css');
+@import url('./fonts.css');
+
+.profile {    
+    width: 100vw;
+    height: 100vh;
+
+    padding: 50px 0px;
+
+    background-color: #141414;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100%;
+    
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile__card {
+    width: 300px;
+    height: 450px;
+
+    padding: 20px;
+
+    background-color: #1f1f1f;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.profile__info {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.profile__info-img-container {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 100%;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.profile__info-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.profile__info-author {
+    text-align: center;
+}
+
+.profile__info-title {
+    margin-bottom: 5px;
+
+    font-family: var(--InterB);
+    font-size: 20px;
+
+    color: #fff;
+}
+
+.profile__info-subtitle {
+    font-family: var(--InterSM);
+    font-size: 12px;
+
+    color: #c5f82a;
+}
+
+.profile__info-desc {
+    font-family: var(--InterR);
+    font-size: 10px;
+
+    color: #fff;
+
+    opacity: 0.7;
+}
+
+.profile__socials {
+    width: 100%;
+
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.btn {
+    background-color: #333333;
+    border-radius: 8px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.1s ease;
+}
+
+.profile__social {
+    width: 100%;
+    height: 40px;
+}
+
+.btn__text {
+    font-family: var(--InterSM);
+    font-size: 12px;
+
+    color: #fff;
+}
+
+.profile__info-img-container:hover .profile__info-img {
+    width: 110%;
+    height: 110%;
+}
+
+.btn:hover {
+    background-color: #c5f82a;
+}
+
+.btn:hover .btn__text {
+    color: #1f1f1f;
+}

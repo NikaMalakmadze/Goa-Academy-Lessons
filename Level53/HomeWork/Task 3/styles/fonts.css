@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: 'Manrope-Medium';
+    src: url('./../Assets/fonts/Manrope-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('./../Assets/fonts/Manrope-Bold.ttf');
+}
+
+:root {
+    --ManropeM: 'Manrope-Medium';
+    --ManropeB: 'Manrope-Bold';
+}

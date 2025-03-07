@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('./../Assets/fonts/static/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('./../Assets/fonts/static/Inter-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('./../Assets/fonts/static/Inter-Bold.ttf');
+}
+
+:root {
+    --InterR: 'Inter-Regular';
+    --InterSM: 'Inter-SemiBold';
+    --InterB: 'Inter-Bold'
+}
