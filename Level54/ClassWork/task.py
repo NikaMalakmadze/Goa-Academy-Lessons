@@ -19,3 +19,10 @@ def solution(nums):
     return [] if not nums else sorted(nums)
 
 print(solution([1,2,3,10,5]))
+
+# task 4
+
+def in_asc_order(arr):
+    return [str(i) for i in sorted(arr)] == [str(i) for i in arr]
+
+print(in_asc_order([1, 3, 2]))
