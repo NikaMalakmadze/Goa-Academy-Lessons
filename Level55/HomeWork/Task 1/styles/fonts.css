@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: 'RedHatDisplay-Medium';
+    src: url('./../assets/fonts/RedHatDisplay-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'RedHatDisplay-Bold';
+    src: url('./../assets/fonts/RedHatDisplay-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'RedHatDisplay-Black';
+    src: url('./../assets/fonts/RedHatDisplay-Black.ttf');
+}
+
+:root {
+    --RedHatDisplayM: 'RedHatDisplay-Medium';
+    --RedHatDisplayB: 'RedHatDisplay-Bold';
+    --RedHatDisplayBL: 'RedHatDisplay-Black'
+}
