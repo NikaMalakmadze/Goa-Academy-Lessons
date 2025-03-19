@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: 'YoungSerif-Regular';
+    src: url('./../assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit-Regular';
+    src: url('./../assets/fonts/outfit/static/Outfit-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit-Bold';
+    src: url('./../assets/fonts/outfit/static/Outfit-Bold.ttf');
+}
+
+:root {
+    --YoungSerifR: 'YoungSerif-Regular';
+    --OutfitR: 'Outfit-Regular';
+    --OutfitB: 'Outfit-Bold';
+}

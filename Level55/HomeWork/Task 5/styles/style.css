@@ -1,0 +1,272 @@
+
+@import url('./reset.css');
+@import url('./fonts.css');
+
+body {
+    overflow-x: hidden;
+}
+
+.join {    
+    width: 100vw;
+    height: 100vh;
+
+    padding: 50px 0px;
+
+    background-color: #e5eff5;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100%;
+    
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join__card {
+    width: 600px;
+    height: 400px;
+
+    border-radius: 10px;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.join__card-trial {
+    width: 100%;
+    height: 50%;
+
+    padding: 30px;
+}
+
+.join__card-trial-title {
+    font-family: var(--KarlaB);
+    font-size: 26px;
+
+    color: #2ab2af;
+}
+
+.join__card-trial-subtitle {
+    margin-top: 30px;
+
+    font-family: var(--KarlaB);
+    font-size: 20px;
+
+    color: #c0df34;
+}
+
+.join__card-trial-desc {
+    margin-top: 10px;
+
+    font-family: var(--KarlaR);
+    font-size: 16px;
+
+    color: #98a6bd;
+
+    text-wrap: balance;
+}
+
+.join__card-more {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+}
+
+.join__card-subscription {
+    width: 50%;
+    height: 100%;
+
+    padding: 30px;
+
+    background-color: #2bb3b1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.join__card-subscription-info {
+    width: 100%;
+}
+
+.join__card-subscription-title {
+    font-family: var(--KarlaB);
+    font-size: 20px;
+
+    color: #e5eff5;
+}
+
+.join__card-subscription-price-container {
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.join__card-subscription-price {
+    font-family: var(--KarlaB);
+    font-size: 28px;
+
+    color: #e5eff5;
+}
+
+.join__card-subscription-period {
+    font-family: var(--KarlaR);
+    font-size: 16px;
+
+    color: #e5eff5;
+
+    opacity: 0.8;
+}
+
+.join__card-subscription-desc {
+    margin-top: 10px;
+
+    font-family: var(--KarlaR);
+    font-size: 16px;
+
+    color: #e5eff5;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+
+    border-radius: 4px;
+    background-color: #c0df34;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__text {
+    font-family: var(--KarlaB);
+    font-size: 16px;
+
+    color: #e5eff5;
+}
+
+.join__card-us {
+    width: 50%;
+    height: 100%;
+
+    padding: 30px;
+    
+    background-color: #4abebd;
+}
+
+.join__card-us-title {
+    font-family: var(--KarlaB);
+    font-size: 20px;
+
+    color: #e5eff5;
+}
+
+.join__card-us-desc {
+    margin-top: 10px;
+
+    font-family: var(--KarlaR);
+    font-size: 16px;
+
+    color: #e5eff5;
+
+    opacity: 0.8;
+
+    text-wrap: balance;
+}
+
+@media (max-width: 650px) {
+    .join__card-subscription-desc {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .join__card-subscription-title {
+        font-size: 18px;
+    }
+
+    .join__card-us-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .join {
+        height: fit-content;
+    }
+
+    .container {
+        height: fit-content;
+    }
+
+    .join__card {
+        height: fit-content;
+    }
+
+    .join__card-more {
+        flex-direction: column;
+    }
+
+    .join__card-subscription, .join__card-us {
+        width: 100%;
+        height: 200px;
+    }
+
+    .join__card-subscription-desc {
+        font-size: 14px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .join__card-us-desc {
+        max-width: 60%;
+
+        text-align: left;
+    }
+}
+
+@media (max-width: 450px) {
+    .join__card-us-desc {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 400px) {
+    .join__card-trial-title {
+        font-size: 22px;
+    }
+
+    .join__card-trial-subtitle {
+        font-size: 18px;
+    }
+
+    .join__card-us-desc {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 350px) {
+    .join__card-us-desc {
+        max-width: unset;
+    }
+}

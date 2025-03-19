@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: 'LexendDeca-Regular';
+    src: url('./../assets/fonts/LexendDeca-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'BigShouldersDisplay-Bold';
+    src: url('./../assets/fonts/BigShouldersDisplay-Bold.ttf');
+}
+
+:root {
+    --LexendDecaR: 'LexendDeca-Regular';
+    --BigShouldersDisplayB: 'BigShouldersDisplay-Bold';
+}

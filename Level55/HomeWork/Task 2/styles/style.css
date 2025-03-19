@@ -1,0 +1,271 @@
+
+@import url('./reset.css');
+@import url('./fonts.css');
+
+body {
+    overflow-x: hidden;
+}
+
+.recipe {    
+    width: 100vw;
+    height: fit-content;
+
+    padding: 50px 0px;
+
+    background-color: #f3e6d8;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100%;
+    
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe__card {
+    max-width: 800px;
+    height: fit-content;
+
+    padding: 30px;
+
+    background-color: #f5f7ff;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.recipe__card-img-container {
+    width: 100%;
+    height: fit-content;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.recipe__card-img {
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+.recipe__card-welcome {
+    width: 100%;
+
+    margin-top: 30px;
+}
+
+.recipe__card-welcome-title {
+    font-family: var(--YoungSerifR);
+    font-size: 30px;
+
+    color: #302d2c;
+}
+
+.recipe__card-welcome-desc {
+    margin-top: 20px;
+
+    font-family: var(--OutfitR);
+    font-size: 16px;
+
+    color: #302d2c;
+}
+
+.recipe__card-welcome-time {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.recipe__card-welcome-time-title {
+
+    font-family: var(--OutfitB);
+    font-size: 20px;
+
+    color: #7b284f;
+}
+
+.recipe__card-welcome-time-list {
+    margin-top: 10px;
+    margin-left: 25px;
+
+    list-style: disc;
+}
+
+.recipe__card-welcome-time-list li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+
+    font-family: var(--OutfitR);
+    font-size: 16px;
+
+    color: #302d2c;
+}
+
+.recipe__card-welcome-time-list li::marker {
+    color: #854632;
+}
+
+.bold {
+    font-family: var(--OutfitB);
+}
+
+.recipe__card-welcome-ingredients {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.recipe__card-welcome-ingredients-title {
+    font-family: var(--YoungSerifR);
+    font-size: 30px;
+
+    color: #854632;
+}
+
+.recipe__card-welcome-ingredients-list {
+    margin-top: 20px;
+    margin-left: 25px;
+
+    list-style: disc;
+}
+
+.recipe__card-welcome-ingredients-list li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+
+    font-family: var(--OutfitR);
+    font-size: 16px;
+
+    color: #302d2c;
+}
+
+.recipe__card-welcome-ingredients-list li::marker {
+    color: #854632;
+}
+
+.recipe__card-instructions {
+    margin-bottom: 30px;
+    padding-top: 30px;
+
+    border-top: 1px solid #57575778;
+}
+
+.recipe__card-insturctions-title {
+    font-family: var(--YoungSerifR);
+    font-size: 30px;
+
+    color: #854632;
+}
+
+.recipe__card-insturctions-list {
+    margin-top: 20px;
+    margin-left: 25px;
+
+    list-style: decimal;
+}
+
+.recipe__card-insturctions-list li::marker {
+    color: #854632;
+}
+
+.recipe__card-insturctions-list li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+
+    font-family: var(--OutfitR);
+    font-size: 16px;
+
+    color: #302d2c;
+
+    text-wrap: balance;
+}
+
+.recipe__card-nutration {
+    padding-top: 30px;
+
+    border-top: 1px solid #57575778;
+}
+
+.recipe__card-nutration-title {
+    font-family: var(--YoungSerifR);
+    font-size: 30px;
+
+    color: #854632;
+}
+
+.recipe__card-nutration-desc {
+    margin-top: 20px;
+
+    font-family: var(--OutfitR);
+    font-size: 16px;
+
+    color: #302d2c;
+
+    text-wrap: balance;
+}
+
+.recipe__card-nutration-table {
+    width: 100%;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe__card-nutration-row:first-child {
+    border-top: none;
+}
+
+.recipe__card-nutration-row {
+    width: 100%;
+    
+    padding-block: 10px;
+
+    padding-left: 5%;
+    padding-right: 40%;
+
+    border-top: 1px solid #57575778;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe__card-nutration-ingredient {
+    font-family: var(--OutfitR);
+    font-size: 16px;
+
+    color: #302d2c;
+}
+
+.recipe__card-nutration-amount {
+    font-family: var(--OutfitB);
+    font-size: 16px;
+
+    color: #854632;
+}
+
+@media (max-width: 600px) {
+    .recipe, .container {
+        padding: 0;
+    }
+
+    .recipe__card {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .recipe__card-nutration-row {
+        padding-right: 20%;
+    }
+}

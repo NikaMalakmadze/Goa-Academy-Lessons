@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: 'HankenGrotesk-Medium';
+    src: url('./../assets/fonts/static/HankenGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'HankenGrotesk-Bold';
+    src: url('./../assets/fonts/static/HankenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'HankenGrotesk-ExtraBold';
+    src: url('./../assets/fonts/static/HankenGrotesk-ExtraBold.ttf');
+}
+
+:root {
+    --HankenGroteskM: 'HankenGrotesk-Medium';
+    --HankenGroteskB: 'HankenGrotesk-Bold';
+    --HankenGroteskEB: 'HankenGrotesk-ExtraBold';
+}
