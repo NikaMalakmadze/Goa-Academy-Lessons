@@ -1,0 +1,231 @@
+
+@import url('./reset.css');
+@import url('./fonts.css');
+
+::-webkit-scrollbar {
+    visibility: hidden;     /* hide scrollbar */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.testimonial {    
+    width: 100vw;
+    height: fit-content;
+
+    padding: 50px 0px;
+
+    background-color: #e7eaee;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100%;
+    
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    display: grid;
+    grid-auto-columns: 1fr;     /* using auto columns in case if we dont declare column size, so it will do it automatically */
+    grid-template-areas:                /* areas default placing, when no media query is active */
+    'daniel'
+    'jonathan'
+    'jeanette'
+    'patrick'
+    'kira';
+
+    gap: 20px;
+}
+
+.testimonial__card {
+    padding: 30px;
+
+    border-radius: 10px;
+    background-color: #fff;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    overflow: hidden;
+}
+
+.testimonial__card:nth-child(1) {
+    position: relative;
+
+    background-color: #7541c8;
+
+    z-index: 0;
+
+    grid-area: daniel;       /* assign grid area name to corresponding card */
+}
+
+.testimonial__card:nth-child(1)::before {
+    position: absolute;
+    content: url('./../assets/images/bg-pattern-quotation.svg');
+    top: 0;
+    right: 30px;
+
+    z-index: -1;
+}
+
+.testimonial__card:nth-child(2) {
+    background-color: #48556a;
+
+    grid-area: jonathan;    /* assign grid area name to corresponding card */
+}
+
+.testimonial__card:nth-child(3) {
+    background-color: #fff;
+
+    grid-area: jeanette;    /* assign grid area name to corresponding card */
+}
+
+
+.testimonial__card:nth-child(3) .testimonial__card-author-job{
+    color: #121212;
+
+    opacity: 0.6;
+}
+
+.testimonial__card:nth-child(3) .testimonial__card-title{
+    color: #121212;
+
+    opacity: 0.7;
+}
+
+.testimonial__card:nth-child(3) .testimonial__card-desc{
+    color: #121212;
+
+    opacity: 0.7;
+}
+
+.testimonial__card:nth-child(3) .testimonial__card-author-name{
+    color: #121212;
+
+    opacity: 0.7;
+}
+
+.testimonial__card:nth-child(4) {
+    background-color: #19212e;
+
+    grid-area: patrick;     /* assign grid area name to corresponding card */
+}
+
+
+.testimonial__card:nth-child(5) {
+    background-color: #fff;
+
+    grid-area: kira;        /* assign grid area name to corresponding card */
+}
+
+.testimonial__card:nth-child(5) .testimonial__card-author-job{
+    color: #121212;
+
+    opacity: 0.6;
+}
+
+.testimonial__card:nth-child(5) .testimonial__card-title{
+    color: #121212;
+
+    opacity: 0.7;
+}
+
+.testimonial__card:nth-child(5) .testimonial__card-desc{
+    color: #121212;
+
+    opacity: 0.7;
+}
+
+.testimonial__card:nth-child(5) .testimonial__card-author-name{
+    color: #121212;
+
+    opacity: 0.7;
+}
+
+.testimonial__card-author-container {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.testimonial__card-author-img-container {
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid #cfcfcf;
+    border-radius: 100%;
+
+    overflow: hidden;
+}
+
+.testimonial__card-author-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.testimonial__card-author-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.testimonial__card-author-name {
+    font-family: var(--BarlowSemiCondensedM);
+    font-size: 20px;
+
+    color: #cfcfcf;
+}
+
+.testimonial__card-author-job {
+    font-family: var(--BarlowSemiCondensedM);
+    font-size: 14px;
+
+    color: #cfcfcf;
+
+    opacity: 0.9;
+}
+
+.testimonial__card-title {
+    font-family: var(--BarlowSemiCondensedSB);
+    font-size: 24px;
+
+    color: #eee5ff;
+}
+
+.testimonial__card-desc {
+    font-family: var(--BarlowSemiCondensedM);
+    font-size: 18px;
+
+    color: #eee5ff;
+
+    opacity: 0.7;
+}
+
+/* when device has at least 800px width screen */
+@media (min-width: 800px) {
+    .container {
+        grid-template-areas:                /* reasign grid template areas */
+        'daniel daniel jonathan'
+        'kira kira kira'
+        'jeanette patrick patrick'
+    }
+}
+
+/* when device has at least 1200px width screen */
+@media (min-width: 1200px) {
+    .container {
+        grid-template-areas:                /* reasign grid template areas */
+        'daniel daniel jonathan kira'
+        'jeanette patrick patrick kira'
+    }
+}
+
