@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: 'Commissioner-Regular';
+    src: url('./../assets/fonts/Commissioner-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Commissioner-Medium';
+    src: url('./../assets/fonts/Commissioner-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Commissioner-Bold';
+    src: url('./../assets/fonts/Commissioner-Bold.ttf');
+}
+
+:root {
+    --CommissionerR: 'Commissioner-Regular';
+    --CommissionerM: 'Commissioner-Medium';
+    --CommissionerB: 'Commissioner-Bold';
+}
