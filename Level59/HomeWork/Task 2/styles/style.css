@@ -1,205 +1,346 @@
 
 @import url('./reset.css');
 @import url('./fonts.css');
+@import url('./header.css');
+@import url('./components.css');
 
 body {
     overflow-x: hidden;
 }
 
-.container {
-    max-width: 1440px;
-    height: 100%;
-    
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.header {
+.riser {
     box-sizing: border-box;
+    position: relative;
 
-    height: 400px;
+    width: 100%;
+    height: fit-content;
 
-    padding: 40px 0;
-
-    background-image: url('./../assets/images/image-hero-desktop.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top: -100px;
 }
 
-.header__content {
+.riser::before {
+    position: absolute;
+    content: url('./../assets/images/logo-mastercraft.svg');
+    top: -30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border: 5px solid #fff;
+    border-radius: 100%;
+}
+
+.riser .container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.riser__card {
+    max-width: 900px;
+
+    padding: 30px;
+
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.riser__card-title {
+    margin-block: 14px;
+
+    font-family: var(--CommissionerB);
+    font-size: 34px;
+
+    color: #121212;
+
+    text-align: center;
+}
+
+.riser__card-subtitle {
+    font-family: var(--CommissionerR);
+    font-size: 20px;
+
+    color: #7a7a7a;
+
+    text-align: center;
+}
+
+.riser__card-project-container {
+    width: 100%;
+
+    margin-top: 40px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__logo-container {
-    width: fit-content;
-    height: fit-content;
+.riser__card-project-btn {
+    width: 200px;
+    height: 56px;
+}
+
+.riser__card-project-btn .btn__text {
+    font-size: 18px;
+}
+
+.riser__card-project-favorite-container {    
+    background-color: #e9f2f9;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.riser__card-project-favorite-img {
+    width: 56px;
+    height: 56px;
 
     cursor: pointer;
 }
 
-.header__logo {
-    width: auto;
-    height: 25px;
-
-    object-fit: cover;
+.riser__card-project-favorite-img circle {
+    transition: fill 0.2s ease;
 }
 
-.header__nav {
-    width: 300px;
+.riser__card-project-favorite-img:hover circle {
+    fill: #3a3a3a;
 }
 
-.header__nav-list {
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.riser__card-project-favorite-img.active--fav:hover circle {
+    fill: #39aba3;
 }
 
-.header__nav-list-item {
+.riser__card-project-favorite-desc {
+    margin-right: 20px;
+
     font-family: var(--CommissionerB);
     font-size: 16px;
 
-    color: #ededed;
+    color: #7a7a7a;
 
-    cursor: pointer;
+    display: block;
 }
 
-.header__nav-list-item:hover {
-    opacity: 0.9;
-}
+.riser__card-info-container {
+    width: 100%;
 
-.header__nav--show {
-    top: 100px;
+    margin-top: 90px;
 
-    padding: 20px;
-
-    width: calc(100vw - 40px);
-    
-    background-color: #ededed;
-    border-radius: 8px;
-
-    display: block !important;
-}
-
-.header__nav-list--show {
-    width: fit-content;
-    height: fit-content;
-
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
 
     gap: 20px;
 }
 
-.burger {
-    display: none;
-    position: relative;
+.riser__card-info {
+    width: 85%;
 
-    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
 
-.burger__midle-line {
-    display: block;
+.riser__card-info-price-wrapper {
+    padding-right: 50px;
 
-    width: 24px;
-    height: 4px;
+    border-right: 2px solid #7a7a7a45;
 
-    border-radius: 2px;
-    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
 
-    transition: width 0.6s ease, opacity 0.6s ease, height 0.6s ease;
+    gap: 10px;
 }
 
-.burger::before {
-    position: absolute;
-    content: '';
+.riser__card-info-price {
+    font-family: var(--CommissionerB);
+    font-size: 30px;
 
-    top: 0px;
-
-    width: 24px;
-    height: 4px;
-
-    border-radius: 2px;
-    background-color: #ededed;
-
-    cursor: pointer;
-
-    z-index: 11;
-
-    transition: transform 0.6s ease, width 0.6s ease;
+    color: #121212;
 }
 
-.burger::after {
-    position: absolute;
-    content: '';
+.riser__card-info-price-old {
+    font-family: var(--CommissionerM);
+    font-size: 16px;
 
-    bottom: 0px;
-
-    width: 24px;
-    height: 4px;
-
-    border-radius: 2px;
-    background-color: #ededed;
-
-    cursor: pointer;
-
-    z-index: 11;
-
-    transition: transform 0.6s ease, width 0.6s ease;
+    color: #7a7a7a;
 }
 
-.burger.active::before{
-    transform: translateX(-10px) rotateZ(45deg) translateX(14px);
+.riser__card-info-backers-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
 }
 
-.burger.active::after{
-    transform: translateX(-10px) rotateZ(-45deg) translateX(14px);
+.riser__card-info-backers {
+    font-family: var(--CommissionerB);
+    font-size: 30px;
+
+    color: #121212;
 }
 
-.burger.active .burger__midle-line {
-    width: 0px;
-    height: 0px;
-    opacity: 0;
+.riser__card-info-backers-desc {
+    font-family: var(--CommissionerM);
+    font-size: 16px;
+
+    color: #7a7a7a;
+}
+
+.riser__card-info-days-wrapper {
+    padding-left: 50px;
+
+    border-left: 2px solid #7a7a7a45;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.riser__card-info-days {
+    font-family: var(--CommissionerB);
+    font-size: 30px;
+
+    color: #121212;
+}
+
+.riser__card-info-days-desc {
+    font-family: var(--CommissionerM);
+    font-size: 16px;
+
+    color: #7a7a7a;
+}
+
+.riser__card-info-progress-bar-wrapper {
+    width: 100%;
+    height: 12px;
+
+    background-color: #e9f2f9;
+    border-radius: 20px;
+}
+
+.riser__card-info-progress-bar {
+    width: 80%;
+    height: 12px;
+
+    background-color: #3cb4ac;
+    border-radius: 20px;
+}
+
+.riser__card-about {
+    width: 100%;
+
+    margin-top: 90px;
+}
+
+.riser__card-about-title {
+    font-family: var(--CommissionerB);
+    font-size: 24px;
+
+    color: #121212;
+}
+
+.riser__card-about-desc {
+    margin-top: 20px;
+
+    font-family: var(--CommissionerR);
+    font-size: 18px;
+
+    line-height: 26px;
+
+    color: #7a7a7a;
+
+    text-wrap: balance;
+}
+
+@media (max-width: 650px) {
+    .riser__card-info-price-wrapper {
+        padding-right: 15px;
+    }
+
+    .riser__card-info-days-wrapper {
+        padding-left: 15px;
+    }
 }
 
 @media (max-width: 600px) {
-
-    .header__nav {
-        display: none;
-
-        position: absolute;
+    .riser__card-title {
+        font-size: 28px;
     }
 
-    .header__nav--show .header__nav-list-item {
-        color: #121212;
+    .riser__card-subtitle {
+        font-size: 16px
     }
 
-    .header__nav--show .header__nav-list-item:hover {
-        opacity: 0.8;
-    }
+    .riser__card-project-container {
+        justify-content: center;
 
-    .burger {
-        width: 24px;
-        height: 24px;
+        gap: 10px;
+    }
     
-        display: flex;
+    .riser__card-project-favorite-desc {
+        display: none;
+    }
+
+    .riser__card-info-container {
+        margin-top: 70px;
+    }
+
+    .riser__card-info {
+        width: 100%;
+
+        margin-bottom: 10px;
+
+        flex-direction: column;
         align-items: center;
+
+        gap: 20px;
     }
 
-    .burger::before {
-        background-color: #ededed;
+    .riser__card-info-price-wrapper, .riser__card-info-days-wrapper, .riser__card-info-backers-wrapper {
+        padding: 0px;
+        border: 0px;
+
+        text-align: center;
     }
 
-    .burger::after {
-        background-color: #ededed;
+    .riser__card-info-backers-wrapper {
+        padding-block: 30px;
+        border-top: 2px solid #7a7a7a45;
+        border-bottom: 2px solid #7a7a7a45;
+    }
+}
+
+@media (max-width: 400px) {
+    .riser__card-title {
+        font-size: 24px;
     }
 
-    .burger__midle-line {
-        background-color: #ededed;
+    .riser__card-subtitle {
+        font-size: 12px
     }
 
+    .riser__card-project-btn {
+        width: 160px;
+    }
+
+    .riser__card-project-btn .btn__text {
+        font-size: 14px;
+    }
+
+    .riser__card-about {
+        margin-top: 40px
+    }
+
+    .riser__card-about-title {
+        font-size: 20px;
+    }
+
+    .riser__card-about-desc {
+        font-size: 16px;
+    }
 }

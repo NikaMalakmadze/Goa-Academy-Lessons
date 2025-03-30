@@ -1,4 +1,6 @@
 
+// HEADER //
+
 // find and get needed elements from page
 const headerNav = document.querySelector('.header__nav');
 const headerNavList = document.querySelector('.header__nav-list');
@@ -46,6 +48,32 @@ const removeShowClasses = () => {
     }
 };
 
+// MAIN // 
+
+// find needed elements
+const favButton = document.querySelector('#fav');
+const favButtonText = document.querySelector('#fav-text');
+
+// function to bookmark needed project
+const bookMark = () => {
+    favButton.addEventListener('click', () => {         // add click listener
+        // add or remove active classes
+        favButton.classList.toggle('active--fav');          
+        favButtonText.classList.toggle('active--fav-green');
+    
+        const value = favButtonText.dataset.value;      // get dataset value (bookmarked or not)
+        
+        if (value === 'not-booked') {                       // if not marked make it bookmarked
+            favButtonText.dataset.value = 'booked';
+            favButtonText.innerHTML = 'Bookmarked';
+        } else {                                            // else make it not-bookmarked
+            favButtonText.dataset.value = 'not-booked';
+            favButtonText.innerHTML = 'Bookmark';
+        } 
+    });
+}
+
 window.addEventListener('resize', removeShowClasses);   // on window resize call specific function
 
 burgerMenu();       // call burger menu function
+bookMark();         // call bookmark function
