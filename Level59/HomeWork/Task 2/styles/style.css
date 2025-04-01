@@ -4,8 +4,9 @@
 @import url('./header.css');
 @import url('./components.css');
 
-body {
+body, html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .riser {
@@ -80,6 +81,12 @@ body {
 .riser__card-project-btn {
     width: 200px;
     height: 56px;
+
+    transition: background-color 0.3s ease;
+}
+
+.riser__card-project-btn:hover {
+    background-color: #39aba3;
 }
 
 .riser__card-project-btn .btn__text {
@@ -129,7 +136,7 @@ body {
 .riser__card-info-container {
     width: 100%;
 
-    margin-top: 90px;
+    margin-top: 70px;
 
     display: flex;
     flex-direction: column;
@@ -235,6 +242,7 @@ body {
     width: 100%;
 
     margin-top: 90px;
+    margin-bottom: 40px;
 }
 
 .riser__card-about-title {
@@ -257,6 +265,490 @@ body {
     text-wrap: balance;
 }
 
+.riser__card-reward {
+    width: 100%;
+
+    margin-bottom: 20px;
+    padding: 30px;
+
+    border: 1px solid #7a7a7a45;
+    border-radius: 8px;
+}
+
+.riser__card-reward-title-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+.riser__card-reward-title {
+    font-family: var(--CommissionerB);
+    font-size: 24px;
+    
+    color: #121212;
+}
+
+.riser__card-reward-pledge {
+    font-family: var(--CommissionerB);
+    font-size: 16px;
+    
+    color: #3cb4ac;
+}
+
+.riser__card-reward-desc {
+    margin-block: 20px;
+
+    font-family: var(--CommissionerR);
+    font-size: 18px;
+
+    line-height: 30px;
+    
+    color: #7a7a7a;
+}
+
+.riser__card-reward-select-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.riser__card-reward-select-amount {
+    font-family: var(--CommissionerB);
+    font-size: 30px;
+    
+    color: #121212;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.riser__card-reward-select-left {
+    font-family: var(--CommissionerR);
+    font-size: 18px;
+    
+    color: #7a7a7a;
+}
+
+.riser__card-reward-select-btn {
+    width: 150px;
+    height: 45px;
+
+    transition: background-color 0.3s ease;
+}
+
+.riser__card-reward-select-btn:hover {
+    background-color: #39aba3;
+
+}
+
+.riser__card-reward-select-btn .btn__text {
+    font-family: var(--CommissionerB);
+}
+
+.riser__card-reward--grey {
+    border: 1px solid #7a7a7a2b;
+}
+
+.riser__card-reward--grey .riser__card-reward-select-btn {
+    background-color: #cbcbcb;
+    
+    opacity: 1;
+
+    cursor: not-allowed;
+}
+
+.riser__card-reward--grey .riser__card-reward-select-btn .btn__text {
+    opacity: 1;
+}
+
+.riser__card-reward--grey * {
+    opacity: 0.7;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.modals {
+    position: relative;
+    z-index: 2;
+}
+
+.form__modal-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    padding-inline: 20px;
+
+    background-color: #0000003b;
+
+    display: flex;
+    justify-content: center;
+}
+
+.form__modal {
+    position: relative;
+    max-width: 600px;
+
+    margin-block: 50px;
+    padding: 30px;
+
+    background-color: #fff;
+    border-radius: 12px;
+
+    overflow-y: scroll;
+}
+
+.form__modal::-webkit-scrollbar {
+    display: none;
+}
+
+.form__modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+    height: fit-content;
+
+    cursor: pointer;
+}
+
+.form__modal-close path {
+    transition: opacity 0.2s ease, fill 0.2s ease;
+}
+
+.form__modal-close:hover path {
+    fill: #121212;
+    opacity: 0.8;
+}
+
+.form__modal-title {
+    font-family: var(--CommissionerB);
+    font-size: 24px;
+
+    color: #121212;
+}
+
+.form__modal-desc {
+    margin-block: 20px;
+
+    font-family: var(--CommissionerR);
+    font-size: 14px;
+
+    color: #7a7a7a;
+}
+
+.form__modal-pledge {
+    position: relative;
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #7a7a7a45;
+    border-radius: 8px;
+    
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+    transition: border-color 0.3s ease;
+}
+
+.form__modal-pledge--active {
+    border: 2px solid #3cb4ac;
+}
+
+.form__modal-pledge-info {
+    padding: 20px;
+    padding-left: 60px;
+}
+
+.form__modal-radio {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+
+    width: 20px;
+    height: 20px;
+
+    margin: 0;
+
+    border: 2px solid #7a7a7a45;
+    border-radius: 100%;
+
+    appearance: none;
+    outline: none;
+    vertical-align: middle;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.form__modal-radio::before {
+    content: '';
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 100%;
+    background-color: #3cb4ac;
+
+    display: none;
+}
+
+.form__modal-radio:checked::before {
+    display: block;
+}
+
+.form__modal-label {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__modal-pledge-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__modal-pledge-title {
+    font-family: var(--CommissionerB);
+    font-size: 18px;
+
+    color: #121212;
+
+    cursor: pointer;
+
+    line-height: 20px;
+
+    transition: color 0.2s ease;
+}
+
+.form__modal-pledge-title:hover {
+    color: #3cb4ac;
+}
+
+.form__modal-pledge-desc {
+    margin-top: 10px;
+    
+    font-family: var(--CommissionerR);
+    font-size: 16px;
+
+    line-height: 24px;
+
+    color: #7a7a7a;
+}
+
+.form__modal-pledge-price {
+    font-family: var(--CommissionerB);
+    font-size: 16px;
+
+    color: #3cb4ac;
+}
+
+.form__modal-pledge-amount {
+    font-family: var(--CommissionerB);
+    font-size: 18px;
+
+    color: #121212;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.form__modal-pledge-left {
+    font-family: var(--CommissionerR);
+    font-size: 14px;
+
+    color: #7a7a7a;
+}
+
+.form__modal-pledge--grey {
+    border: 1px solid #7a7a7a2b;
+}
+
+.form__modal-pledge--grey * {
+    opacity: 0.7;
+}
+
+.form__modal-pledge--grey .form__modal-pledge-title {
+    cursor: default;
+}
+
+.form__modal-pledge--grey .form__modal-pledge-title:hover {
+    color: #121212;
+}
+
+.form__modal-pledge-form {
+    width: 100%;
+
+    padding: 20px;
+    padding-top: 30px;
+
+    border-top: 1px solid #7a7a7a45;
+
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__modal-pledge-form-label {
+    font-family: var(--CommissionerM);
+    font-size: 16px;
+
+    color: #7a7a7a;
+}
+
+.form__modal-pledge-form-options {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.form__modal-pledge-form-number-wrapper {
+    min-width: 80px;
+    width: fit-content;
+    height: 40px;
+
+    padding: 5px 10px;
+
+    border: 2px solid #7a7a7a45;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.form__modal-pledge-form-number {
+    width: 40px;
+
+    border: none;
+    outline: none;
+    
+    font-family: var(--CommissionerB);
+    font-size: 16px;
+    
+    color: #121212;
+
+    text-align: left;
+}
+
+.form__modal-pledge-form-number-currency {
+    font-family: var(--CommissionerM);
+    font-size: 16px;
+
+    color: #7a7a7a;
+}
+
+.form__modal-pledge-form-btn {
+    width: 100px;
+    height: 40px;
+
+    transition: background-color 0.3s ease;
+}
+
+.form__modal-pledge-form-btn:hover {
+    background-color: #39aba3;
+}
+
+.thanks__modal-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    padding-inline: 20px;
+
+    background-color: #0000003b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks__modal {
+    max-width: 600px;
+
+    margin-block: 50px;
+    padding: 30px;
+
+    background-color: #fff;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.thanks__modal-img-container {
+    width: 80px;
+    height: 80px;
+}
+
+.thanks__modal-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.thanks__modal-info {
+    width: 100%;
+}
+
+.thanks__modal-title {
+    font-family: var(--CommissionerB);
+    font-size: 20px;
+
+    color: #121212;
+
+    text-align: center;
+}
+
+.thanks__modal-desc {
+    margin-block: 20px;
+
+    font-family: var(--CommissionerR);
+    font-size: 18px;
+
+    line-height: 20px;
+
+    color: #7a7a7a;
+
+    text-align: center;
+}
+
+.thanks__modal-btn {
+    width: 100px;
+    height: 40px;
+
+    margin: 0 auto;
+
+    transition: background-color 0.3s ease;
+}
+
+.thanks__modal-btn:hover {
+    background-color: #39aba3;
+}
+
 @media (max-width: 650px) {
     .riser__card-info-price-wrapper {
         padding-right: 15px;
@@ -264,6 +756,11 @@ body {
 
     .riser__card-info-days-wrapper {
         padding-left: 15px;
+    }
+
+    .form__modal-pledge-title-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -313,6 +810,63 @@ body {
         border-top: 2px solid #7a7a7a45;
         border-bottom: 2px solid #7a7a7a45;
     }
+
+    .riser__card-reward-title-container {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .riser__card-reward-select-container {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .form__modal-pledge-title {
+        font-size: 16px;
+    }
+
+    .form__modal-pledge-price {
+        font-size: 14px;
+    }
+
+    .form__modal-pledge-form {
+        padding-top: 20px;
+
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    .form__modal-pledge-form-options {
+        width: 100%;
+
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .form__modal-pledge-info {
+        padding: 20px;
+    }
+
+    .form__modal-label {
+        padding-left: 40px;
+    }
+
+    .form__modal-pledge:first-of-type .form__modal-pledge-desc{
+        margin-top: 30px;
+    }
+
+    .form__modal-pledge-amount {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -342,5 +896,26 @@ body {
 
     .riser__card-about-desc {
         font-size: 16px;
+    }
+
+    .riser__card-reward-title {
+        font-size: 20px;
+    }
+
+    .riser__card-reward-desc {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    .form__modal-pledge-form {
+        align-items: flex-start;
+    }
+
+    .form__modal-pledge-form-options {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
     }
 }

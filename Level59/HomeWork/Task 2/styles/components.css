@@ -23,6 +23,8 @@
     font-size: 16px;
 
     color: #ededed;
+
+    pointer-events: none;
 }
 
 .active--fav circle {
