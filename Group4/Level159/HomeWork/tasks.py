@@ -32,3 +32,32 @@ def min_length_num_V2(num_dig, ord_max):
     return [False, -1]
 
 print(min_length_num_V2(8, 16))
+
+#V3
+# Passed all tests, works in less than 4s
+
+from math import log10 
+
+def calc_n(ord_max):
+    num = 1
+    for i in range(1, ord_max):
+        num += pow(i, ord_max-i)
+    return int(log10(num)) + 1 
+
+def min_length_num(num_dig, ord_max):
+    left = 0
+    right = ord_max
+    while left <= right:
+        middle = (left+right)//2
+        middle_n = calc_n(middle)
+        if middle_n == num_dig:
+            while calc_n(middle) == num_dig:
+                middle -= 1
+            return [True, middle + 1]
+        elif middle_n > num_dig:
+            right = middle - 1
+        else:
+            left = middle + 1
+    return [False, -1]
+
+print(min_length_num_V2(8, 16))
