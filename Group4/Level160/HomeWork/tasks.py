@@ -31,6 +31,23 @@ print(to_binary(5))
 
 # task 3
 
+# first kata of josephus 'series'
+
+def josephus(items,k):
+    if not items: return []
+    res = []
+    delete_index = 0
+    while items:
+        delete_index += k - 1 
+        if delete_index > len(items) - 1:
+            delete_index = delete_index % len(items)
+        res.append(items.pop(delete_index))
+    return res
+
+print(josephus([1,2,3,4,5,6,7,8,9,10],1))
+
+# Second kata of josephus 'series'
+
 def josephus_survivor(n,k):
     arr = list(range(1, n+1))
     delete_index = 0
@@ -45,13 +62,22 @@ print(josephus_survivor(100,1))
 
 # task 4
 
-def move_zeros(lst):
+# V1
+
+def move_zeros1(lst):
     count = lst.count(0)
     while 0 in lst:
         lst.remove(0)
     return lst + [0]*count
 
-print(move_zeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]))
+print(move_zeros1([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]))
+
+#V2
+
+def move_zeros2(lst):
+    return  [i for i in lst if i != 0] + [0]*lst.count(0)
+
+print(move_zeros2([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]))
 
 # task 5
 
