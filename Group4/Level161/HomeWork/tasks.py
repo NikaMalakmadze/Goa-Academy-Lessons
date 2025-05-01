@@ -26,3 +26,15 @@ def sum_strings(x, y):
     return ''.join(str(i) for i in sum_arr).lstrip('0') or '0'
 
 print(sum_strings("123", "456"))
+
+# Progressive Spiral Number Branch
+#   Solved with different solution
+
+import math
+def branch(n):
+    if n == 1: return 0
+    element_layer = math.ceil((math.sqrt(n)+1)/2)
+    branch_start = ((element_layer-1)*2 - 1)**2+1
+    return (n - branch_start) // ((element_layer-1)*2)
+
+print(branch(50))
