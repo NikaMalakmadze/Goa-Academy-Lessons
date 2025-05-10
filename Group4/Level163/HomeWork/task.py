@@ -137,11 +137,11 @@ class Vocabulary(LoadFile):
     def remove_word(self, word, remove_from_all=False):
         if remove_from_all:
             self.total_words.discard(word)
+            self.new_words.discard(word)
             return
         self.learned_words.discard(word)
         self.in_progress_words.discard(word)
         self.not_learned_words.discard(word)
-        self.new_words.discard(word)
 
     def output_progress(self):
         output_info = {
@@ -224,5 +224,5 @@ def main():
         # clear terminal
         os.system('clear')
 
-if __name__ == '__main__':
+if __name__ == '__task__':
     main()
