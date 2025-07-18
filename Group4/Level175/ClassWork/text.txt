@@ -1,0 +1,5 @@
+car
+red
+blue
+tree
+red
